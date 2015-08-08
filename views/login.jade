@@ -1,0 +1,28 @@
+extends layout
+
+block content
+	.container
+		- if (message.length)
+				.col-md-10.col-md-offset-2
+					div.alert.alert-danger.alert-dismissable.fade.in
+						button.close(data-dismiss="alert",type="button")
+							span &times;
+						p #{message}
+		form.form-horizontal(action="/login",method="post")
+			.form-group
+				label.col-md-2.control-label 用户名
+				.col-md-10
+					input.form-control(type="text",name="username")
+			.form-group
+				label.col-md-2.control-label 邮箱
+				.col-md-10
+					input.form-control(type="text",name="email")
+			.form-group
+				label.col-md-2.control-label 密码
+				.col-md-10
+					input.form-control(type="text",name="password")
+			.form-group
+				.col-md-10.col-md-offset-2
+					input.btn.btn-info.btn-block(type="submit",value="登录")
+
+
