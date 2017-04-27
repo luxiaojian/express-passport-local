@@ -1,5 +1,7 @@
 # 理解Passport.js的工作流程
 ## 关于Passport.js
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/luxiaojian/express-passport-local.svg)](https://greenkeeper.io/)
 `Passport.js`是Nodejs一个做登录注册的中间件，支持本地验证和第三方账号的登录验证（支持绝大部分社交网站）。
 ## 组成部分
 * `passport.initialize()`: 每次请求到来时触发，保证session中包含`passport.user`对象（有可能是空对象）。
