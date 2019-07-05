@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "bcrypt": "^0.8.4",
@@ -19,6 +21,8 @@
     "morgan": "~1.6.1",
     "passport": "^0.2.2",
     "passport-local": "^1.0.0",
-    "serve-favicon": "~2.3.0"
-  }
+    "serve-favicon": "~2.3.0",
+    "snyk": "^1.192.3"
+  },
+  "snyk": true
 }
