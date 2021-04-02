@@ -15,7 +15,7 @@
     "express-flash": "0.0.2",
     "express-session": "^1.11.3",
     "jade": "~1.11.0",
-    "mongoose": "^4.1.1",
+    "mongoose": "^5.12.3",
     "morgan": "~1.6.1",
     "passport": "^0.2.2",
     "passport-local": "^1.0.0",
